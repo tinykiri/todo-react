@@ -1,0 +1,78 @@
+#root {
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: 100;
+  letter-spacing: 4px;
+  color: #333234;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(109.6deg, rgb(177, 173, 219) 11.2%, rgb(245, 226, 226) 91.1%);
+}
+
+.todoListArea {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+}
+
+.newTasksArea {
+  border-radius: 10px;
+  width: 300px;
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  text-align: center;
+  background-color: #FFFFFF;
+}
+
+.inputNewTask {
+  width: 180px;
+  height: 20px;
+  border: none;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  color: #333234;
+  background-color: #FFFFFF;
+}
+
+input[type="checkbox"] {
+  cursor: pointer;
+  accent-color: #FFBB75;
+}
+
+textarea:focus, .inputNewTask:focus{
+  outline: solid #FFBB75;
+}
+
+.inputNewTask:focus::placeholder {
+  color: transparent;
+}
+
+.btnAdd, .btnDelete {
+  border-radius: 10px;
+  font-size: 14px;
+  width: 80px;
+  height: 40px;
+}
+
+.btnDelete {
+  background-color: #f95959;
+}
+
+.btnAdd {
+  background-color: #FFBB75;
+}
+
+.taskTextArea {
+  display: flex;
+  gap: 10px;
+}
